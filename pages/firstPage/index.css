@@ -1,0 +1,222 @@
+.custom-button {
+  border-radius: 50px;
+  margin: 0.2rem;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.custom-button:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #f35508;
+  --color-secondary: #1e1e1e;
+  --color-black: #181818;
+  --color-white: #fff;
+}
+
+body {
+  background-color: #181818;
+  padding: 0 1rem;
+}
+
+footer {
+  margin: 100px 0 20px 0px;
+}
+
+footer a {
+  display: block;
+  padding-left: 0;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+  margin-top: 110px;
+}
+
+footer .box {
+  display: flex;
+}
+footer .box .copy {
+  color: white;
+  margin-top: 200px;
+}
+
+header img {
+  margin: 1rem 0;
+  width: 90px;
+}
+
+nav a {
+  color: var(--color-white);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+footer nav a:nth-child(2n-1) {
+  text-align: right;
+}
+
+.button {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-white);
+  font-size: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.login {
+  border-radius: 10px;
+  color: var(--color-white);
+  display: block;
+  font-size: 24px;
+  padding: 0.75rem 1rem;
+  max-width: 14rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.treinoss {
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.hero-section img {
+  display: block;
+  margin: 1.25rem 0 0 auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  padding-right: 1.25r;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background-color: var(--color-secondary);
+  margin-bottom: 20px;
+  max-width: 17rem;
+  padding: 20px;
+  border-radius: 25px;
+}
+.card .bts {
+  font-size: 13px;
+}
+.card strong {
+  display: block;
+  font-size: 20px;
+  margin: 20px 0px;
+  text-align: center;
+  color: white;
+}
+
+.card a {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin: 10px 60px;
+}
+
+.hero-section {
+  margin: 100px 0px;
+}
+
+.hero-section .botao {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  color: white;
+
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-auto a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+.colororange {
+  color: var(--color-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 40rem) {
+  header nav {
+    display: block;
+    text-align: center;
+    margin: 1rem auto 0;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and(min-width:48rem) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header img,
+  header nav,
+  header .button {
+    margin: 0;
+  }
+}
